@@ -1,0 +1,57 @@
+/* mobile */
+@media screen and (min-width: 320px) and (max-width: 685px) {
+  html {
+    font-size: 6px;
+  }
+  .form-box {
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: auto;
+    padding: 2rem;
+    border-radius: 30px;
+  }
+  .form-box > img {
+    width: 150px;
+  }
+}
+/* tablet */
+@media screen and (min-width: 685px) and (max-width: 840px) {
+  html {
+    font-size: 7px;
+  }
+  .form-box {
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: auto;
+    padding: 3rem;
+    border-radius: 30px;
+  }
+  .form-box > img {
+    width: 160px;
+  }
+}
+/* laptop */
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  html {
+    font-size: 8px;
+  }
+  .form-box {
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: auto;
+    padding: 3rem;
+    border-radius: 30px;
+  }
+  .form-box > img {
+    width: 170px;
+  }
+}

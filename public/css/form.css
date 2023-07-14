@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  animation: hero 1.5s ease-out;
+}
+@keyframes hero {
+  from {
+    font-size: 0rem;
+  }
+  to {
+  }
+}
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+body {
+  background-image: url(/media/1/login.png);
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-box {
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 20%;
+  border-radius: 30px;
+}
+.form-box > img {
+  width: 220px;
+}
+.form-box > h1 {
+  font-size: 4rem;
+  margin-bottom: 5%;
+  color: #fff;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+input {
+  margin-bottom: 10%;
+  padding: 8px;
+  border-radius: 15px;
+  background-color: inherit;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.checkbox {
+  margin-right: 37%;
+  color: #fff;
+  font-size: 1.5rem;
+}
+.form > button {
+  margin: 5%;
+  font-size: 1.8rem;
+  padding: 6px 50px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.a-form {
+  display: inline;
+  text-decoration: none;
+  color: #fff;
+  margin: 2%;
+  font-size: 1.5rem;
+}
+.form-txt {
+  color: #fff;
+  font-size: 1.3rem;
+  margin-right: 60%;
+}
+.date {
+  width: 100%;
+}
+.icon-form {
+  color: #fff;
+  font-size: 2rem;
+}
+.head-icon {
+  color: #fff;
+  font-size: 2rem;
+  transition: 0.5s;
+}
+.head-icon:hover {
+  color: #4e9f3d;
+  font-size: 2.5rem;
+}
+.a-icon {
+  margin-right: 80%;
+  margin-top: 5%;
+}
+.btn {
+  transition: 0.5s;
+}
+.btn:hover {
+  font-size: 2.5rem;
+  background-color: #4e9f3d;
+}
+/*scrol bar*/
+/* width */
+::-webkit-scrollbar {
+  width: 1rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 15px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #1e5128;
+  border-radius: 15px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #4e9f3d;
+}
+
+* general styling */ :root {
+  --smaller: 0.75;
+}
+
+.countdown-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #1e5128;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  padding: 5rem;
+}
+
+.container {
+  color: #fff;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#headline {
+  font-weight: normal;
+  letter-spacing: 0.125rem;
+  text-transform: uppercase;
+}
