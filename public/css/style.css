@@ -3,15 +3,8 @@
   padding: 0;
   box-sizing: border-box;
   font-family: sans-serif;
-  animation: hero 1.5s ease-out;
 }
-@keyframes hero {
-  from {
-    font-size: 0rem;
-  }
-  to {
-  }
-}
+
 html {
   font-size: 10px;
   scroll-behavior: smooth;
@@ -30,7 +23,6 @@ a {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  border-radius: 30px;
 }
 
 .navbar a {
@@ -40,7 +32,25 @@ a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  transition: 1s;
+  margin: 10px;
+  border-radius: 10px;
+  transition: background-color .2s ease-in-out;
+}
+
+.navbar-left i {
+  margin-left: 10px;
+  font-size: 15px;
+  margin-bottom: -5px;
+}
+
+.loginBtn{
+  color: rgb(196, 11, 11) !important;
+  border: 1px solid rgb(196, 11, 11);
+}
+
+.loginBtn:hover{
+  background-color: rgb(196, 11, 11) !important;
+  color: white !important;
 }
 
 .dropdown {
@@ -63,8 +73,7 @@ a {
 
 .navbar a:hover,
 .dropdown:hover .dropbtn {
-  color: red;
-  font-size: 2rem;
+  background-color: rgb(226, 226, 226);
 }
 
 .dropdown-content {
