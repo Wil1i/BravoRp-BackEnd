@@ -31,7 +31,9 @@ a {
 .rules-txt {
   width: 80%;
   color: #fff;
-  background-color: #191a1993;
+  background-color: #191a19c0;
+  border: 5px solid rgb(59, 59, 59);
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.493);
   margin: 20px;
   border-radius: 15px;
   padding: 5%;
