@@ -24,6 +24,19 @@
     display: flex;
   }
   
+  .navbar-left {
+    min-width: 100px;
+    max-width: 200px;
+  }
+
+  .navbar-left > a{
+    width: 100%;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .navbar-left i {
     margin-left: 10px;
     font-size: 15px;
