@@ -3,6 +3,7 @@ const bodyParser = require("body-parser")
 const flash = require("connect-flash")
 const cookieParser = require("cookie-parser")
 const session = require("express-session")
+const passport = require("passport")
 
 const config = require("./configs/config.json")
 
@@ -14,6 +15,10 @@ app.use(flash())
 app.use(cookieParser())
 app.use(session({ secret: config.app.secret }))
 app.use(express.static(__dirname + "/public"))
+app.use(passport.initialize());
+app.use(passport.session());
+
+require("./helpers/passport")
 
 app.set("views", __dirname + "/views")
 app.set("view engine", "ejs")

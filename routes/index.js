@@ -5,7 +5,7 @@ Router = new Router()
 
 const loginPageController = require("../controllers/loginPageController")
 Router.get("/login", isNotLoggedIn, loginPageController.get)
-Router.post("/login", isNotLoggedIn, loginPageController.post)
+Router.post("/login", loginPageController.post)
 
 const registerPageController = require("../controllers/registerPageController")
 Router.get("/register", isNotLoggedIn, registerPageController.get)

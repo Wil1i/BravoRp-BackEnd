@@ -18,9 +18,16 @@
       </div> -->
     </div>
     <div class="navbar-left">
+      <% if(user){ %>
+        <a href="/dashboard" class="loginBtn">
+          <i class="fa-solid fa-user"></i>
+          داشبورد
+        </a>
+      <% }else{ %>
       <a href="/login" class="loginBtn">
         <i class="fa-solid fa-user"></i>
-        ورود
+        ورود / عضویت
       </a>
+      <% } %>
     </div>
   </div>

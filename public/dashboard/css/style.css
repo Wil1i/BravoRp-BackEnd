@@ -15,58 +15,6 @@ body {
   color: #fff;
 }
 
-.navbar {
-  /* position: fixed; */
-  width: 100%;
-  overflow: hidden;
-  background-color: #686868;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-  z-index: 10;
-}
-
-.navbar-right {
-  display: flex;
-}
-
-.navbar a {
-  float: left;
-  font-size: 2rem;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-  color: white;
-  border-radius: 10px;
-  min-width: 100px;
-}
-.navbar a:hover,
-.dropdown:hover .dropbtn {
-  background-color: gray;
-}
-
-.navbar-left i {
-  margin-left: 10px;
-  font-size: 15px;
-  margin-bottom: -5px;
-}
-
-.loginBtn {
-  background-color: gray;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100px;
-}
-
-.loginBtn {
-  background-color: transparent;
-  color: white;
-  border: 1px solid gray;
-}
-
 .box-1 {
   margin-top: 2rem;
   padding-top: 2%;
