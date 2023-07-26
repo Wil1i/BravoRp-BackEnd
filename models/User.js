@@ -17,6 +17,10 @@ const User = db.define("users", {
         type: DataTypes.TEXT
     },
 
+    citizenId: {
+        type: DataTypes.TEXT
+    },
+
     userRank: {
         type: DataTypes.TEXT,
         defaultValue: 'user'

@@ -14,6 +14,9 @@ Router.post("/register", isNotLoggedIn, registerPageController.post)
 const resetPasswordPageController = require("../controllers/resetPasswordController")
 Router.get("/reset", resetPasswordPageController.get)
 
+const updateCitizenIdController = require("../controllers/updateCitizenId")
+Router.post("/citizen", updateCitizenIdController.post)
+
 const rulesPageController = require("../controllers/rulesPageController")
 Router.get("/rules", rulesPageController.get)
 
