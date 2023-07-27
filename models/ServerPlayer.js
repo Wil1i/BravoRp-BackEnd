@@ -1,4 +1,5 @@
 const serverDB = require("../configs/serverDB")
+const ServerPermission = require("./ServerPermission")
 const { DataTypes } = require("sequelize")
 
 const ServerPlayer = serverDB.define("players", {
@@ -31,6 +32,14 @@ const ServerPlayer = serverDB.define("players", {
     job: {
         type: DataTypes.TEXT
     }
+}, {
+    timestamps : false
+})
+
+ServerPlayer.hasMany(ServerPermission, {as : "permissions"})
+ServerPermission.belongsTo(ServerPlayer, {
+    foreignKey : 'playerId',
+    as : 'permissions'
 })
 
 module.exports = ServerPlayer
