@@ -6,7 +6,6 @@ passport.initialize()
 
 passport.use(new localStrategy(
     async function (username, password, done) {
-        console.log(1);
         const user = await User.findOne({
             where: {
                 username: username

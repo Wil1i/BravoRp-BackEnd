@@ -9,7 +9,7 @@ Router.post("/login", loginPageController.post)
 
 const registerPageController = require("../controllers/registerPageController")
 Router.get("/register", isNotLoggedIn, registerPageController.get)
-Router.post("/register", isNotLoggedIn, registerPageController.post)
+Router.post("/register", registerPageController.post)
 
 const resetPasswordPageController = require("../controllers/resetPasswordController")
 Router.get("/reset", resetPasswordPageController.get)
