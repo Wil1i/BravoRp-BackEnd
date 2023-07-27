@@ -8,5 +8,11 @@
         "name" : "bravorp",
         "username" : "root",
         "password" : ""
+    },
+
+    "serverDataBase" : {
+        "name" : "",
+        "username" : "",
+        "password" : ""
     }
 }
