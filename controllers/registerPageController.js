@@ -1,7 +1,9 @@
 const User = require("../models/User")
 
 const get = (req, res) => {
-    res.render("registerPage")
+    res.render("registerPage", {
+        user: req.user
+    })
 }
 
 const post = async (req, res) => {

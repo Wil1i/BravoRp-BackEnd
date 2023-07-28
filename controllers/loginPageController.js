@@ -1,7 +1,9 @@
 const passport = require("passport")
 
 const get = (req, res) => {
-    res.render("loginPage")
+    res.render("loginPage", {
+        user: req.user
+    })
 }
 
 const post = passport.authenticate("local", {
