@@ -11,8 +11,8 @@
     },
 
     "serverDataBase" : {
-        "name" : "",
-        "username" : "",
+        "name" : "bravorpsv",
+        "username" : "root",
         "password" : ""
     }
 }

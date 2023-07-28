@@ -18,7 +18,7 @@
     <!-- responsiv link -->
     <link rel="stylesheet" href="/dashboard/responsive/panel-responsive.css" />
     <!-- js link -->
-    <script defer src="./js/main.js"></script>
+    <script defer src="/js/main.js"></script>
     <!-- fav icon -->
     <link rel="icon" type="image/x-icon" href="/dashboard/media/baravo-tab-logo.png" />
     <!-- fontawsome link -->
@@ -42,6 +42,15 @@
     <div style="display: block; width: 100%; height: 7rem"></div>
     <!-- nav bar end -->
     <!-- carecter info start -->
+    <% if(!user.verified){ %>
+      <div class="verifyAlert">
+        <div>
+          <p>کد احراز هویت شما</p>
+          <p><%= user.code %></p>
+        </div>
+        <p>لطفا برای انجام احراز هویت، داخل سرور از کامند /verify و کد احراز هویت استفاده کنید.</p>
+      </div>
+    <% } %>
     <h1 class="title">مجوز ها</h1>
     <div class="box-1">
       <div class="carecter-box">
@@ -52,7 +61,7 @@
       <div class="carecter-box">
         <i class="box-icon fa-solid fa-car box-icon"></i>
         <br />
-        <h2>گواهینامه رانندگی</h2>
+        <h2>مجوز رانندگی</h2>
       </div>
       <div class="carecter-box red-box">
         <i class="box-icon fa-solid fa-helicopter box-icon"></i>
@@ -73,7 +82,7 @@
       <div class="carecter-box-2">
         <div class="txt">
           <p class="box-title">اسم کاراکتر</p>
-          <p class="box-description"><%= player.name %></p>
+          <p class="box-description"><%= player?.name %></p>
         </div>
         <i
           style="left: -9rem"
@@ -83,7 +92,7 @@
       <div class="carecter-box-2">
         <div class="txt">
           <p class="box-title">پول نقد</p>
-          <p class="box-description">$<%= JSON.parse(player.money).cash %></p>
+          <p class="box-description">$<%= player?.money && JSON.parse(player?.money).cash %></p>
         </div>
         <i
           style="left: -9rem"
@@ -93,7 +102,7 @@
       <div class="carecter-box-2">
         <div class="txt">
           <p class="box-title">حساب بانکی</p>
-          <p class="box-description">$<%= JSON.parse(player.money).bank %></p>
+          <p class="box-description">$<%= player?.money && JSON.parse(player?.money).bank %></p>
         </div>
         <i
           style="left: -7.5rem"
@@ -105,7 +114,7 @@
       <div class="carecter-box-2">
         <div class="txt">
           <p class="box-title">شماره تماس</p>
-          <p class="box-description"><%= JSON.parse(player.charinfo).phone %></p>
+          <p class="box-description"><%= player?.charinfo && JSON.parse(player?.charinfo).phone %></p>
         </div>
         <i
           style="left: -7rem"
@@ -125,7 +134,7 @@
       <div class="carecter-box-2">
         <div class="txt">
           <p class="box-title">راکستار لایسنس</p>
-          <p class="box-description"><%= player.license %></p>
+          <p class="box-description"><%= player?.license %></p>
         </div>
         <i
           style="left: -7rem"
@@ -135,13 +144,13 @@
     </div>
     <!-- user info end -->
     <!-- admin start -->
-    <% if(player.permissions[0]){ %>
+    <% if(player?.permissions[0]){ %>
     <h1 class="title">اطلاعات ادمین</h1>
     <div class="box-1">
       <div class="carecter-box-2">
         <div class="txt">
           <p class="box-title">لول ادمینی شما</p>
-          <p class="box-description"><%= player.permissions[0].permission %></p>
+          <p class="box-description"><%= player?.permissions[0]?.permission %></p>
         </div>
         <i
           style="left: -6rem"

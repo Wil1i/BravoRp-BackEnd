@@ -21,7 +21,8 @@ const post = async (req, res) => {
 
     await User.create({
         username: req.body.username,
-        password: await User.encryptPassword(req.body.password)
+        password: await User.encryptPassword(req.body.password),
+        code: Math.floor(1000 + Math.random() * (9999 - 1000 + 1))
     })
 
     res.redirect("/dashboard")

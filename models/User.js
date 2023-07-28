@@ -24,6 +24,15 @@ const User = db.define("users", {
     userRank: {
         type: DataTypes.TEXT,
         defaultValue: 'user'
+    },
+
+    verified: {
+        type: DataTypes.BOOLEAN,
+        defaultValue: false
+    },
+
+    code: {
+        type: DataTypes.TEXT
     }
 })
 
