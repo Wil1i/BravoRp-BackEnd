@@ -31,15 +31,19 @@ const ServerPlayer = serverDB.define("players", {
 
     job: {
         type: DataTypes.TEXT
+    },
+
+    metadata: {
+        type: DataTypes.TEXT
     }
 }, {
-    timestamps : false
+    timestamps: false
 })
 
-ServerPlayer.hasMany(ServerPermission, {as : "permissions"})
+ServerPlayer.hasMany(ServerPermission, { as: "permissions" })
 ServerPermission.belongsTo(ServerPlayer, {
-    foreignKey : 'playerId',
-    as : 'permissions'
+    foreignKey: 'playerId',
+    as: 'permissions'
 })
 
 module.exports = ServerPlayer
