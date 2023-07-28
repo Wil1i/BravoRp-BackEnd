@@ -1,0 +1,15 @@
+@font-face {
+    font-family: "sans";
+    src: url("../fonts/sans.woff2");
+    font-weight: lighter;
+}
+
+@font-face {
+    font-family: "sansbold";
+    src: url("../fonts/sansbold.woff2");
+    font-weight: bolder;
+}
+
+*{
+    font-family: 'sans';
+}
